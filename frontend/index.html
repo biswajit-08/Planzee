@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planzee</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Planzee ToDo App</h1>
+
+    <!-- Auth Section -->
+    <div id="auth-section">
+        <h2>Sign Up / Log In</h2>
+        <input type="text" id="name" placeholder="Name (SignUp only)">
+        <input type="email" id="email" placeholder="Email">
+        <input type="password" id="password" placeholder="Password">
+        <button class="primary" onclick="signUp()">Sign Up</button>
+        <button class="primary" onclick="logIn()">Log In</button>
+    </div>
+
+    <!-- ToDo Section -->
+    <div id="todo-section" style="display:none;">
+        <h2>Your ToDos</h2>
+        <input type="text" id="todo-title" placeholder="Title">
+        <input type="text" id="todo-desc" placeholder="Description">
+        <button class="primary" onclick="createTodo()">Add ToDo</button>
+
+        <ul id="todo-list"></ul>
+        <button class="secondary" onclick="logOut()">Log Out</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
